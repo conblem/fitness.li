@@ -1,0 +1,21 @@
+{
+  "name": "fitness.li",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel src/index.html"
+  },
+  "author": "conblem",
+  "license": "ISC",
+  "dependencies": {
+    "@hyperapp/router": "^0.4.1",
+    "bulma": "^0.6.2",
+    "hyperapp": "^1.2.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "parcel-bundler": "^1.6.2"
+  }
+}
