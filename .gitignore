@@ -68,3 +68,6 @@ typings/
 .cache
 dist
 .vscode
+
+config/*.json
+!config/*example.json

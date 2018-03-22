@@ -8,12 +8,24 @@ const Slideout = (props, children) => (
 ) => {
   console.log(toggleNavigation);
   const cssStyle = isNavigationOpen ? "show" : "";
+
   return (
     <div>
       <a onclick={toggleNavigation} class="button is-active">
         Active
       </a>
-      <div class={"slideout " + cssStyle}>{children}</div>
+      <div class={"slideout " + cssStyle}>
+        <div class="level">
+          <div class="level-right">
+            <div class="level-item">
+              <a onclick={toggleNavigation} class="button is-text">
+                X
+              </a>
+            </div>
+          </div>
+        </div>
+        {children}
+      </div>
     </div>
   );
 };
